@@ -34,7 +34,8 @@ body{
     width: 80%;
     height: 700px;
     margin: 0 auto;
-    /* border: 10px solid var(--clr-primary); */
+    border: 10px solid var(--clr-primary);
+    align-items: center;
 }
 
 .Boxs {
@@ -43,7 +44,6 @@ body{
     background-color: var(--clr-body);
     padding: 1em;
     font-weight: 700;
-    text-align: center;
     border: 10px solid var(--clr-primary);
     border-radius: 10px;
 }
@@ -51,8 +51,8 @@ body{
 
 .contents {
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: space-around; */
+    flex-direction: row;
+    justify-content: space-evenly;
     /* align-items: flex-start; */
     /* flex-wrap: wrap; */
     /* align-content: flex-start; */
@@ -60,9 +60,23 @@ body{
 }
 
 .Box-1 {
-    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 0; */
     /* flex-shrink: 0; */
-    /* flex-basis: 300px; */
+    /* flex-basis: 300; */
     /* flex: 1; */
-    align-self: flex-start;
+}
+
+.Box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
