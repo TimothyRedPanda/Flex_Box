@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family:'Roboto-Bold';
+    src: url(Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+:root {
+    font-family:'Vina_Sans';
+    --clr-primary: #4a2c48;
+    --clr-body: #d2aed2;
+    --clr-bg: #ddd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+body{
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto-Bold';
+    color: var(--clr-primary);
+    background-color: var(--clr-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.contents {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    /* border: 10px solid var(--clr-primary); */
+}
+
+.Boxs {
+    width: 150px;
+    height: 150px;
+    background-color: var(--clr-body);
+    padding: 1em;
+    font-weight: 700;
+    text-align: center;
+    border: 10px solid var(--clr-primary);
+    border-radius: 10px;
+}
+    /* base styles end */
+
+.contents {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    /* align-content: flex-start; */
+    /* gap: 1em; */
+}
+
+.Box-1 {
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+    /* flex-basis: 300px; */
+    /* flex: 1; */
+    align-self: flex-start;
+}
