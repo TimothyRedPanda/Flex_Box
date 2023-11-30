@@ -6,9 +6,11 @@
 
 :root {
     font-family:'Vina_Sans';
-    --clr-primary: #4a2c48;
-    --clr-body: #d2aed2;
-    --clr-bg: #ddd;
+    --clr-font: #b48291;
+    --clr-primary: #afaab9;
+    --clr-body: #b9cfd4;
+    --clr-bg: #cee0dc;
+    --dark-font:#a5243d;
 }
 
 *,
@@ -21,7 +23,6 @@ body{
     line-height: 1.6;
     word-spacing: 1.4px;
     font-family: 'Roboto-Bold';
-    color: var(--clr-primary);
     background-color: var(--clr-bg);
     justify-content: center;
     align-items: center;
@@ -40,9 +41,10 @@ body{
 }
 
 .Boxs {
+    color: var(--clr-font);
     display: flex;
     flex-flow: row wrap;
-    overflow: auto;
+    overflow:scroll;
     align-items: center;
     justify-content: center;
     min-width: 6rem;
@@ -52,11 +54,24 @@ body{
     /* background-color: var(--clr-body); */
     padding: 2%;
     font-weight: 700;
-    border: 6px solid var(--clr-primary);
+    border: 4px solid var(--clr-primary);
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-.Box-2 {
+.Boxs:hover{
+    color: var(--dark-font);
+    border-color:var(--clr-font);
+    background-color: var(--clr-body);  
+}
+.Boxs:hover::after{
+    content:"";
+    height: 2px;
+    background-color: var(--clr-font);
+    width: 100%
+}
+
+.Box-2, .Box-3 {
     flex: 1;
     align-items: center;
     justify-content: center;
@@ -64,6 +79,6 @@ body{
     flex-flow: row wrap;
 }
 
-.Box-4, .Box-5{
+.Box-4, .Box-5, .Box-6{
     flex: 1;
 }
